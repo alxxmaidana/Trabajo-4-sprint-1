@@ -30,6 +30,12 @@ export function completarTareaController(req, res) {
     res.send(renderizarMensaje("Tarea marcada como completada"));
 }
 
+export function crearTareaController() {
+    const { id, titulo, descripcion, completado } = req.body;
+    completarTarea(parseInt(id));
+    res.send(renderizarMensaje("Tarea creada éxitosamente"));
+}
+
 // Eliminar una tarea
 export function eliminarTareaController(req, res) {
     const { id } = req.params;
