@@ -13,7 +13,7 @@ Esta capa es esencial para:
 
 --- 
 
-## Eplicación del Código:
+## Explicación del Código:
 
 #### 1. Función `renderizarListaTareas()` :
 
@@ -32,24 +32,3 @@ ideal para enviar mensajes de exito, error o cualquier otro tipo de notificacion
 utiliza cuando se necesita devolver una tarea específica, como al completar una tarea o al
 solicitar una tarea por su ID.
 
----
-
-## Jusficación del Diseño:
-
-
-#### 1. Modularidad:
-
-- Cada función es responsable de una tarea específica: formatear listas, tareas individuales o
-mensajes. Esto sigue el **principio de responsabilidad única**, lo que hace que el código sea fácil
-de mantener y reutilizar.
-
-#### 2. Simplicidad:
-
-Las funciones son sencillas y directas, limitandose a formatear los datos en JSON. Esto garantiza
-que la capa de vista no se involucra en la lógica de negocio y se mantiene enfocada en la
-presentación.
-
-#### 3. Consistencia:
-
-- Al centralizar la lógica de formateo, garantizamos que todas las respuestas sean consistentes en
-cuanto a su formato, lo cual es crucial en una API.
