@@ -13,7 +13,7 @@ Esta capa es esencial para:
 
 --- 
 
-## Eplicación del Código:
+## Epxlicación del Código:
 
 #### 1. Función `renderizarListaTareas()` :
 
