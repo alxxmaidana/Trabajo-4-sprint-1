@@ -11,7 +11,7 @@ const filePath = path.join(__dirname, "../tareas.txt");
 
 // Implementación concreta que extiende la interfaz TarasDataSource
 export default class TareaRepository extends TareasDataSource {
-    consturctor() {
+    constructor() {
         super(); // Llamada al constructor de la clase base
     }
 

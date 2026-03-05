@@ -1,7 +1,7 @@
 import {
     listarTareas,
-    listarTreasCompletas,
-    crearTareas,
+    listarTareasCompletas,
+    crearTarea,
     completarTarea,
     eliminarTarea,
 } from "../services/tareaService.mjs";
@@ -19,7 +19,7 @@ export function listarTareasController(req, res) {
 
 // Listar solo las tareas completadas
 export function listarTareasCompletadasController(req, res) {
-    const tareasCompletadas = listarTreasCompletas();
+    const tareasCompletadas = listarTareasCompletas();
     res.send(renderizarListaTareas(tareasCompletadas));
 }
 
@@ -30,9 +30,9 @@ export function completarTareaController(req, res) {
     res.send(renderizarMensaje("Tarea marcada como completada"));
 }
 
-export function crearTareaController() {
+export function crearTareaController(req, res) {
     const { id, titulo, descripcion, completado } = req.body;
-    completarTarea(parseInt(id));
+    crearTarea(id, titulo, descripcion, completado);
     res.send(renderizarMensaje("Tarea creada éxitosamente"));
 }
 

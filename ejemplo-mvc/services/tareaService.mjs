@@ -1,5 +1,5 @@
 // Importar la capa de persistencia (repositoirio)
-import TareaRepository from "../repository/tareaRepository";
+import TareaRepository from "../repository/tareaRepository.mjs";
 import Tarea from "../models/tarea.mjs";
 
 // Instancia para obtener el repositorio para manejar las tareas
@@ -12,7 +12,7 @@ export function listarTareas() {
 }
 
 // Servicio para obtener solo las tareas completadas
-export function listarTareasCompletadas() {
+export function listarTareasCompletas() {
     // Obtiene todas las teareas de la capa de persistencia
     const tareas = tareaRepo.obtenerTodas();
     // Filtra las tareas completadas
@@ -45,7 +45,7 @@ export function completarTarea(id) {
 }
 
 // Servicio para eliminar una tarea
-export function elimiarTarea(id) {
+export function eliminarTarea(id) {
     let tareas = tareaRepo.obtenerTodas();
     tareas.filter((tarea) => tarea.id !== id);
     tareaRepo.guardar(tareas);
