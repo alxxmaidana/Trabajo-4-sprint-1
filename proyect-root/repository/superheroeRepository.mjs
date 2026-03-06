@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 export default class SuperHerosFileRepository extends SuperHeroeDataSource {
     constructor() {
         super();
-        this.filePath = path.join(__dirname);
+        this.filePath = path.join(__dirname, "../superheroes.txt");
     }
 
     obtenerTodos() {

@@ -20,6 +20,6 @@ export function obtenerSuperheroesMayoresDe30() {
         (hero) =>
             hero.edad > 30 &&
             hero.planetaOrigen === "Tierra" &&
-            hero.poder.lenght >= 2,
+            hero.poder.length >= 2,
     );
 }

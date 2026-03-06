@@ -34,7 +34,7 @@ export function buscarSuperheroePorAtributoController(required, response) {
     }
 }
 
-export function obtenerSuperheroesMayoresDe30Controller(response) {
+export function obtenerSuperheroesMayoresDe30Controller(request, response) {
     const superheroes = obtenerSuperheroesMayoresDe30();
     response.send(renderizarListaSuperHeroes(superheroes));
 }
