@@ -31,7 +31,7 @@ Repositorio con ejercicios progresivos sobre **Node.js**, **Express.js** y la **
 
 ## 🧪 Pruebas
 
-Las APIs han sido probadas con **Postman**, incluidas colecciones de solicitudes, ambientes y especificaciones en la carpeta `proyect-root/postman/`.
+Las APIs han sido probadas con **Postman**, en los proyectos `proyect-root/` y `ejemplo-mvc/`.
 
 ---
 
