@@ -29,6 +29,10 @@ Repositorio con ejercicios progresivos sobre **Node.js**, **Express.js** y la **
   - **Views** (formateo de respuestas)
 - **Objetivo:** Integrar todos los conceptos aprendidos
 
+## 🧪 Pruebas
+
+Las APIs han sido probadas con **Postman**, incluidas colecciones de solicitudes, ambientes y especificaciones en la carpeta `proyect-root/postman/`.
+
 ---
 
 **Diplomatura - Módulo 3 - Sprint 1**
